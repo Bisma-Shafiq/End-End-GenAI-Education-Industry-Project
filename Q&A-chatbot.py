@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set the title of the app
-st.title("Google Gemini Q&A Streamlit App")
+st.title("ABC Company GenAI App")
 
 # Configuration for Google Generative AI
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -38,8 +38,8 @@ retriever = vectordb.as_retriever(score_threshold=0.3)
 # Create the Retrieval QA chain
 qa_chain = RetrievalQA.from_chain_type(llm=llm, chain_type='stuff', retriever=retriever, input_key='query', return_source_documents=True)
 
-# App layout
-st.header("Ask Your Questions")
+# # App layout
+# st.header("Ask Your Questions")
 
 # User input: Question
 user_query = st.text_input("Ask a question:", "")
