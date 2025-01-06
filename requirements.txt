@@ -6,4 +6,9 @@ langchain_google_genai
 python-dotenv
 InstructorEmbedding
 sentence-transformers
-
+tqdm
+pinecone-client
+pinecone-text
+pinecone-notebooks
+pypdf
+PYPDF2
